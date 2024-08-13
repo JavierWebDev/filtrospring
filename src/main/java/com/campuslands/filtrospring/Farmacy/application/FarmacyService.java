@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.campuslands.filtrospring.Farmacy.domain.Farmacy;
 import com.campuslands.filtrospring.Farmacy.infrastructure.persistence.out.FarmacyRepository;
 
+@Service
 public class FarmacyService {
     @Autowired
     FarmacyRepository farmacyRepository;

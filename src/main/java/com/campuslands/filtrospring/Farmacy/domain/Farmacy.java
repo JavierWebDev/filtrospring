@@ -9,9 +9,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
+import lombok.Setter;
 
 @Data
 @Entity
+@Setter
 public class Farmacy {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
